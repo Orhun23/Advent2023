@@ -1,6 +1,9 @@
 def process_line(line):
-    combined_number = ''.join(char for char in line if char.isdigit())
-    return int(combined_number) if combined_number else 0
+    digits = [char for char in line if char.isdigit()]
+    if len(digits) >= 2:
+        combined_number = int(digits[0] + digits[-1])
+        return combined_number
+    return 0
 
 def process_csv(file_path):
     total_sum = 0
