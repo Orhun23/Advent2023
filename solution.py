@@ -1,7 +1,10 @@
 def process_line(line):
     digits = [char for char in line if char.isdigit()]
-    if len(digits) >= 2:
-        combined_number = int(digits[0] + digits[-1])
+    if digits:
+        if len(digits) == 1:
+            combined_number = int(digits[0] * 2)
+        else:
+            combined_number = int(digits[0] + digits[-1])
         return combined_number
     return 0
 
