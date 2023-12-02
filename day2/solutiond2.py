@@ -18,5 +18,8 @@ for l in ls:
         good_ids += int(parts[1])
     total_power += power
 
+# part 1 answer 
 print(good_ids)
+
+#part 2 answer
 print(total_power)
