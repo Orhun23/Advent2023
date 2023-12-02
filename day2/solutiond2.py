@@ -2,7 +2,7 @@ import math
 import re
 from collections import defaultdict
 
-with open("in.txt") as f:
+with open("C:\\Users\\OrhunErdogan\\.vscode\\adventOfCode2023\\Advent2023\\day2\\in.txt") as f:
     ls = f.read().strip().split("\n")
 
 
@@ -18,5 +18,8 @@ for l in ls:
         good_ids += int(parts[1])
     total_power += power
 
+# part 1 answer 
 print(good_ids)
+
+#part 2 answer
 print(total_power)
