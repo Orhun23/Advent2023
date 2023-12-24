@@ -1,4 +1,4 @@
-import sympy 
+import sympy
 
 hailstones = [tuple(map(int, line.replace("@", ",").split(","))) for line in open("C:\\Users\\orhun\\OneDrive\\Documenten\\adventofcode\\Advent2023-1\\day24\\input.txt")]
 
